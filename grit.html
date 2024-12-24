@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grit layout</title>
+    <style>
+         .container{
+            display: grid;
+            /* grid-template-columns: 450px 450px 450px; */
+            /* grid-template-columns: repeat(2, 450px); */
+            /* grid-template-columns: repeat(2, 450px) 500px;  */
+            /* grid-template-columns: repeat(2, 450px) 500px 150px; */
+            /* grid-template-columns: repeat(7, 5fr); */
+            /* grid-template-columns: repeat(2, 4fr) 2fr;  */
+            /* grid-template-columns: repeat(2, 4fr) ;  */
+
+            /* justify-items:end; */
+             justify-items:stretch; 
+              grid-template-columns: repeat(4, 4fr) ;   
+            /* grid-template-columns: 1fr 4fr 2fr ; */
+             grid-gap:20px; 
+            /* column-gap: 20px; */
+            /* row-gap: 20px;  */
+            /* align-content: center; */
+            /* place-content: ; */
+            /* place-items: ; */
+
+
+        }
+        /* .imag{
+           /* grid-column: end; */
+           /*   */
+           /* justify-self:flex-end; */
+           /* align-self: center;
+           place-self: ; */
+        }  */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="imag"><img src="images/burger.png" alt=""></div>
+        <div class="imag"><img src="images/biriyani.png" alt=""></div>
+        <div class="imag"><img src="images/coffee.png" alt=""></div>
+        <div class="imag"><img src="images/pizza.png" alt=""></div>
+        <div class="imag"><img src="images/soup.jpg" alt=""></div>
+        <div class="imag"><img src="images/rice.jpg" alt=""></div>
+        <div class="imag"><img src="images/foods.png" alt=""></div>
+        <div class="imag"><img src="images/pizza.png" alt=""></div>
+        <div class="imag"><img src="images/biriyani.png" alt=""></div>
+        <div class="imag"><img src="images/burger.png" alt=""></div>
+    </div>
+</body>
+</html>
