@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image fluit responsive</title>
+    <style>
+        body{
+            max-width: 1140px;
+            border: 1px solid black;
+            margin: 0px auto;
+
+        }
+        .container{
+            display: flex;
+            gap: 20px;
+        }
+        .container div{
+           width: 50%;
+        }
+        .container img{
+            width: 100%;
+        }
+        @media screen and (max-width: 576px){
+            .container{
+                flex-direction: column;
+                /* grid-template-columns: repeat(1, 1fr); */
+            }
+            .container div{
+           width: 100%;
+        }
+        }
+         
+    </style>
+
+</head>
+<body>
+    <h2>responsive Website</h2>
+    <ol>
+        <li>Viewport meta tag</li>
+        <li>CSS Relative Unit ( em, rem, x, vh,vw, vmax, vmin etc)</li>
+        <li>body max width and horizontal center align</li>
+        <li>image fluid ( use % as width )</li>
+        <li>two column flex and use media query with flex direction column</li>
+        <li>multi column: grid layout</li>
+        <li>menu responsive with need javascript</li>
+    </ol>
+    <div class="container">
+        <div class=""> <img src="images/burger.png" alt=""></div>
+        <div><img src="images/vegitable.webp" alt=""></div>
+        <div><img src="images/HotWings.jpeg" alt=""></div>
+        <div><img src="images/pasta.webp" alt=""></div>
+    </div>
+   
+    
+    
+    
+</body>
+</html>
